@@ -9,8 +9,8 @@ Implemented a real time stock trading engine for matching stock buys with stock 
 
 # Code Structure
 
-Order: Represents an order (BUY/SELL) with atomic quantity and filled status.
-LockFreeQueue: Thread-safe queue using AtomicReference for lock-free enqueueing.
-OrderBook: Manages BUY/SELL queues for a ticker and matches orders.
-StockExchange: Maps tickers to 1,024 OrderBook instances.
-SimulationWrapper: Simulates 1000 orders for BUY/SELL.
+- Order: Represents an order (BUY/SELL) with atomic quantity and filled status.
+- LockFreeQueue: Thread-safe queue using AtomicReference for lock-free enqueueing.
+- OrderBook: Manages BUY/SELL queues for a ticker and matches orders.
+- StockExchange: Maps tickers to 1,024 OrderBook instances.
+- SimulationWrapper: Simulates 1000 orders for BUY/SELL.
